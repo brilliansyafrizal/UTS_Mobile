@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/antri"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nomor_antrian">
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/judulantrian"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="ANTRIAN RS"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="30dp"
+                android:text="Wednesday, Juni 24, 2020"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nomorantrian"
+            android:layout_below="@+id/judulantrian"
+            android:layout_marginTop="100dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/bg_kotakantri"
+            android:layout_gravity="center"
+            android:text="A 23"
+            android:textAlignment="center"
+            android:textSize="80dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_daftar"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:text="print"
+        android:layout_width="170dp"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_daftar"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:text="Back to Home"
+        android:layout_width="250dp"
+        android:layout_height="40dp"/>
+
+
+
+
+</LinearLayout>

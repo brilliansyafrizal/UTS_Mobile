@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dokter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/dokter3"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dr. Sam Owen"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARDIOLOGIST"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                />
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan Keluhan :"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isikan keluhan anda"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Jadwal"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txTanggal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="180dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="textStart"
+                android:hint="  pilih jadwal periksa"
+                android:focusable="false"
+                android:background="@drawable/bg_tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jam Pelayanan"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                />
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="180dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/JamPelayanan">
+            </Spinner>
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penjamin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="180dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Penjamin">
+            </Spinner>
+
+            <Button
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_daftar"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:text="Daftar Sekarang"
+                android:onClick="pindah"
+                android:layout_width="170dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

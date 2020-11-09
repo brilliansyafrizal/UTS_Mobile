@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UTS_Mobile</string>
+    <string-array name="Penjamin">
+        <item>Choose..</item>
+        <item>BPJS</item>
+        <item>UMUM</item>
+        <item>ASURANSI</item>
+    </string-array>
+
+    <string-array name="JamPelayanan">
+        <item>Choose..</item>
+        <item>08.00-10.00</item>
+        <item>16.00-18.00</item>
+        <item>20.00-21.00</item>
+    </string-array>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashbord</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

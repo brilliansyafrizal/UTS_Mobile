@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    tools:context=".SplashScreen">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="130dp"
+            android:text="SELAMAT DATANG"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logoprovinsi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/welcome"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/_6__rsud_dr_soetomo" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="Copy Right RS Dr Soetomo @2020"
+        android:textSize="10dp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

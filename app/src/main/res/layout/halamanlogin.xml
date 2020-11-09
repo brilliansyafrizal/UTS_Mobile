@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gedung_rs"
+    android:orientation="horizontal"
+    tools:context=".Halamanlogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logors"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/_6__rsud_dr_soetomo" />
+
+        <LinearLayout
+            android:id="@+id/formmasuk"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:layout_below="@+id/logors"
+            android:layout_marginTop="150dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnmasukpasien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/formmasuk"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button"
+                    android:text="Masuk Pasien"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnmasukdokter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/formmasuk"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button"
+                    android:text="Masuk Dokter"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btndaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formLogin"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_daftar"
+                android:text="Daftar"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/motors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formmasuk"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/motto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motto kami"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pesanmotto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/motto"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Merawat pasien adalah kesempatan besar yang diberikan kepada kita untuk berbuat kebajikan dan membina hubungan kemanusia yang mulia"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
