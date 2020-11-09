@@ -128,6 +128,7 @@
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/ambulans"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" >
@@ -167,6 +168,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
                     <LinearLayout
+                        android:id="@+id/kosultasidokter"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" >
@@ -196,6 +198,7 @@
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/rekappasien"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" >
@@ -209,13 +212,14 @@
                                 android:layout_height="wrap_content" >
 
                                 <ImageView
-                                    android:id="@+id/imageview4"
+                                    android:id="@+id/rekappasiengambar"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_marginRight="5dp"
                                     android:background="@drawable/passien" />
                                 <TextView
-                                    android:layout_toRightOf="@+id/imageview4"
+                                    android:id="@+id/rekappasientulisan"
+                                    android:layout_toRightOf="@+id/rekappasiengambar"
                                     android:text="Rekap Passien"
                                     android:layout_centerVertical="true"
                                     android:layout_width="wrap_content"

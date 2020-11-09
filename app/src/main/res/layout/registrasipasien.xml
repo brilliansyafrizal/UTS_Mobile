@@ -190,6 +190,24 @@
                 android:layout_height="40dp"/>
 
             <TextView
+                android:text="Password"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@drawable/bg_tombol"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="  Masukkan Password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <TextView
                 android:text="Riwayat"
                 android:textSize="20dp"
                 android:layout_marginLeft="15dp"

@@ -18,6 +18,8 @@
         <activity android:name=".Antrpasien" />
         <activity android:name=".Dokter" />
         <activity android:name=".Notification_dokter" />
+        <activity android:name=".Notification_pasien" />
+        <activity android:name=".Rekappasien" />
         <activity android:name=".Nomor_antrian" />
         <activity
             android:name=".SplashScreen"

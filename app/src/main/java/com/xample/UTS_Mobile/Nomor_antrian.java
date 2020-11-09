@@ -7,6 +7,7 @@ import androidx.core.widget.NestedScrollView;
 import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -66,6 +67,15 @@ public class Nomor_antrian extends AppCompatActivity {
                         Manifest.permission.READ_EXTERNAL_STORAGE}, READ_PHONE);
             }
         }
+
+        Button signupBtn = (Button) findViewById(R.id.sudahdapatnomer);
+
+        signupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialog();
+            }
+        });
 
 
         btnPrint.setOnClickListener(new View.OnClickListener() {
@@ -185,5 +195,30 @@ public class Nomor_antrian extends AppCompatActivity {
         }catch (ActivityNotFoundException e){
             Toast.makeText(this, "No Apps to road PDF File", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void showDialog(){
+        android.app.AlertDialog.Builder alertDialogBuilder = new android.app.AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("RS Dr Soetomo");
+        alertDialogBuilder.setMessage("Nomor antrian sudah terdaftar. apakah anda yakin sudah hafal nomor antrian? ");
+        alertDialogBuilder.setIcon(R.drawable._6__rsud_dr_soetomo);
+        alertDialogBuilder.setCancelable(false);
+        alertDialogBuilder.setPositiveButton("Iya", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText( Nomor_antrian.this, "Nomor sudah terdaftar, silahkan menunggu panggilan nomor", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Nomor_antrian.this, Halamanutamapasien.class);
+                startActivity(intent);
+            }
+        });
+        alertDialogBuilder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        android.app.AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 }

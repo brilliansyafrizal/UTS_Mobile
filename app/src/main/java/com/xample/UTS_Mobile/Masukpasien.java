@@ -21,7 +21,6 @@ public class Masukpasien extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Masukpasien.this, Registrasipasien.class);
                 startActivity(intent);
-//                Toast.makeText(getApplicationContext(), "Pencet", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -35,14 +34,5 @@ public class Masukpasien extends AppCompatActivity {
             }
         });
 
-        TextView lupapassword = (TextView) findViewById(R.id.btnlupapassword);
-
-        lupapassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Masukpasien.this, Antrpasien.class);
-                startActivity(intent);
-            }
-        });
     }
 }

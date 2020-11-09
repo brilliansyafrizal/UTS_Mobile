@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_notif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification_pasien">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/menu"
+            android:layout_width="50dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:text="  Notification"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="360dp"
+            android:src="@drawable/trash"
+            android:layout_width="50dp"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:paddingBottom="5dp"
+            android:paddingLeft="75dp"
+            android:text="Hello Brillian, are you okay?"
+            android:background="@drawable/bg_kotak"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="400dp"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/insurance"
+            android:layout_width="50dp"
+            android:layout_height="80dp"/>
+
+        <EditText
+            android:paddingBottom="5dp"
+            android:paddingLeft="75dp"
+            android:text="Hello Brillian, This time your check Up
+            Stay fit broo"
+            android:background="@drawable/bg_kotak"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="210dp"
+            android:layout_width="400dp"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/insurance"
+            android:layout_width="50dp"
+            android:layout_height="80dp"/>
+
+        <EditText
+            android:paddingBottom="5dp"
+            android:paddingLeft="75dp"
+            android:text="Hello Brillian, This time you dead."
+            android:background="@drawable/bg_kotak"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="320dp"
+            android:layout_width="400dp"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/insurance"
+            android:layout_width="50dp"
+            android:layout_height="80dp"/>
+
+        <Button
+            android:id="@+id/btnclear"
+            android:paddingBottom="5dp"
+            android:text="CLEAR ALL"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:background="@drawable/button_daftar"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="500dp"
+            android:layout_width="400dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -80,6 +80,7 @@
         android:layout_height="40dp"/>
 
     <Button
+        android:id="@+id/sudahdapatnomer"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textColor="@android:color/white"
